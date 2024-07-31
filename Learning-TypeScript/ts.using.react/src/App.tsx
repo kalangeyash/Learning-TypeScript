@@ -3,7 +3,8 @@ import './App.css'
 
 interface TodoInterface{
   title : string,
-  description : string
+  description : string,
+  time : number
 }
 function Todo(props:TodoInterface)
 {
@@ -14,6 +15,9 @@ function Todo(props:TodoInterface)
       <h2>
         {props.description}
       </h2>
+      <h3>
+        {props.time}
+      </h3>
   
     </>)
 }
@@ -22,7 +26,7 @@ function App() {
 
   return (
     <>
-      
+      <Todo title='Go to gym..' description='hellon to gym' time={7007}></Todo>
     </>
   )
 }
